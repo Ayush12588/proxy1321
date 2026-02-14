@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 {
   "name": "LeakData",
   "short_name": "LeakData",
@@ -18,4 +19,26 @@
   "theme_color": "#ffffff",
   "background_color": "#ffffff",
   "display": "standalone"
+=======
+{
+  "name": "LeakData",
+  "short_name": "LeakData",
+  "icons": [
+    {
+      "src": "/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "display": "standalone"
+>>>>>>> 6c2a35b2e0831d4790b65e12978b2ec37f299a4c
 }
