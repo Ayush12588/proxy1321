@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, useMap, Circle, ZoomControl } from 'react-leaflet';
 import { Icon } from 'leaflet';

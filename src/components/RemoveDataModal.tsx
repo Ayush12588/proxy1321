@@ -177,18 +177,18 @@ export default function RemoveDataModal({ isOpen, onClose }: RemoveDataModalProp
                                 )}
 
                                 <div className="flex justify-center mb-4">
-                                    <Turnstile
-                                        siteKey="0x4AAAAAACFVodwOjSj0q1X0"
-                                        options={{ theme: 'light' }}
-                                        onSuccess={(token) => {
-                                            setToken(token);
-                                            if (status === 'error') setStatus('idle');
-                                        }}
-                                        onError={() => {
-                                            setStatus("error");
-                                            setMessage("Verification failed.");
-                                        }}
-                                    />
+                                        <Turnstile
+                                            siteKey={process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || ""}
+                                            options={{ theme: 'light' }}
+                                            onSuccess={(token) => {
+                                                setToken(token);
+                                                if (status === 'error') setStatus('idle');
+                                            }}
+                                            onError={() => {
+                                                setStatus("error");
+                                                setMessage("Verification failed.");
+                                            }}
+                                        />
                                 </div>
 
                                 <button
