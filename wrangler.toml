@@ -1,0 +1,27 @@
+name = "leakdata"
+type = "javascript"
+account_id = ""
+workers_dev = true
+route = ""
+zone_id = ""
+
+[env.production]
+name = "leakdata-prod"
+route = ""
+zone_id = ""
+
+[build]
+command = "npm run build"
+cwd = "./"
+
+[build.upload]
+format = "service-worker"
+
+[env.production.build]
+command = "npm run build"
+
+# Environment variables (these will be set in Cloudflare Pages UI, but can be referenced here)
+[env.production.vars]
+
+[env.production.secrets]
+# Define secrets here that you'll set in Cloudflare Pages
